@@ -1,0 +1,24 @@
+.explore-more{
+    position: relative;
+  display: inline-flex;
+  font-weight: bold;
+  h5,h6{
+    margin-bottom: 0;
+  }
+
+    &:after{
+      content: '';
+      position: absolute;
+      top: 100% ;
+      width: 100%;
+      height: 1px;
+    }
+   @include modifier("disabled"){
+     &:after{
+       display: none;
+     }
+   }
+    svg{
+      margin-left: 12px;
+    }
+}

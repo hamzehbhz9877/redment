@@ -1,0 +1,183 @@
+@import '../../abstracts/mixins';
+
+
+.swiper-slide{
+  position: relative;
+
+}
+.info {
+  user-select: none;
+  position: absolute;
+  inset: 0;
+  top: unset;
+  display: flex;
+  z-index: 1;
+  height: 138px;
+  padding: 39px 96px;
+  @media (max-width: 991.98px) {
+    padding:  20px;
+    height: 148px;
+  }
+  h5,h4{
+    margin-bottom: 0;
+  }
+  .explore-more{
+    margin-left: 80px;
+    @media (max-width: 767.98px) {
+      margin-left: 0;
+    }
+    &:after{
+      background-color: #F3F4F6;
+    }
+  }
+  .divider{
+    height: 65px;
+    background: #6D7280;
+    width: 1px;
+    margin: 0 72px;
+    @media (max-width: 991.98px) {
+      margin: 0 24px;
+      height: 45px;
+    }
+
+  }
+  h6{
+    color: #9CA3AF;
+    margin-bottom: 18px ;
+  }
+  h4{
+    color: #E5E7EB;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    top: unset;
+    background: rgba(31, 41, 55, 1);
+    height: 138px;
+    opacity: .8;
+    z-index: -1;
+    @media (max-width: 991.98px) {
+      height: 148px;
+    }
+  }
+}
+
+.swiper.mySwiper {
+  position: absolute;
+  bottom: 73px;
+  right: 277px;
+  width: 257px;
+box-shadow: 0px 37px 32px -18px black;
+  @media (max-width: 991.98px) {
+    width: 79px;
+    bottom: 20px;
+    right: 68px;
+  }
+  text-align: right;
+  img{
+    width: 257px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 4px;
+    @media (max-width: 991.98px) {
+      width: 79px;
+      height: 40px;
+    }
+  }
+}
+.theme {
+  a {
+    display: inline-block;
+    background: rgba(227, 223, 223, 0.4);
+    padding: 18px;
+    border-radius: 4px;
+    z-index: 1;
+    text-align: center;
+    width: 62px;
+  }
+
+  & .play-scrollbar .scrollbar {
+    position: absolute;
+    right: 0;
+    bottom: 73px;
+    z-index: 1;
+    @media (max-width: 991.98px) {
+      bottom: 0;
+      padding: 0;
+      right: 0;
+      left: 0;
+     .swiper-scrollbar{
+       border-radius: 0 ;
+       margin: 0;
+       width: 100%;
+     }
+      --swiper-scrollbar-size: 4px;
+      width: 100%;
+      .swiper-scrollbar-drag{
+        height: 4px;
+        --swiper-scrollbar-drag-bg-color: #fff;
+        opacity: 1;
+        border-radius: 0;
+      }
+      background: transparent;
+      .current,.total{
+          display: none;
+
+      }
+    }
+  }
+  & .play-scrollbar .play-button {
+    position: absolute;
+    right: 216px;
+    bottom: 143px;
+    z-index: 1;
+    @media (max-width: 991.98px) {
+      bottom: 20px;
+      right: 16px;
+      padding: 9px;
+      width: 40px;
+    }
+  }
+  .scrollbar {
+    background-color: #160B24;
+    border-radius: 2px;
+    width: 277px;
+    padding: 24px;
+    position: relative;
+    --swiper-scrollbar-bg-color: #6F1AB6;
+    --swiper-scrollbar-size: 2px;
+
+    span {
+      color: white;
+      font-size: 14px;
+    }
+  }
+
+  .swiper-scrollbar {
+    margin: 0 17px;
+    opacity: .9;
+    position: unset;
+
+  }
+  .swiper-scrollbar-drag {
+    --swiper-scrollbar-drag-bg-color: rgba(255, 255, 255, 1);
+    height: 2px;
+    opacity: .6;
+  }
+
+}
+
+.main-swiper {
+ .swiper-wrapper .swiper-slide{
+   max-height:557px;
+ }
+  .image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 557px;
+    @media (max-width: 991.98px) {
+    height: 445px;
+    }
+  }
+}

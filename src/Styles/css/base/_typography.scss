@@ -1,0 +1,19 @@
+/**
+ * Basic typography style for copy text
+ */
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  direction: $direction-base;
+  font-family: SF Pro Display, sans-serif;
+}
+
+p {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+

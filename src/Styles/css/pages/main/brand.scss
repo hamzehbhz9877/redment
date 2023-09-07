@@ -1,0 +1,47 @@
+.brand {
+  padding-top: 16px;
+  background-color: rgba(229, 231, 235, 1);
+
+.explore-more{
+  &:after{
+    background: #6F1AB6;
+  }
+}
+  .img img{
+    height: 578px;
+    top: 1097px;
+    @media (max-width: 991.98px) {
+      height: auto;
+    }
+  }
+  .content {
+    padding-top: 94px;
+    padding-left: 96px;
+    font-size: 16px;
+    letter-spacing: .2rem;
+    @media (max-width: 991.98px) {
+      padding-top: 32px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    h6 {
+      color: rgba(156, 163, 175, 1);
+    }
+
+    h1 {
+      color: rgba(55, 65, 81, 1);
+    }
+    @media (max-width: 991.98px) {
+      padding-bottom: 32px;
+    }
+    p {
+      color: rgba(109, 114, 128, 1);
+      padding: 32px 0;
+      @media (max-width: 991.98px) {
+        padding-top: 11px;
+        padding-bottom: 24px;
+      }
+      max-width: 500px;
+    }
+  }
+}

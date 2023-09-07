@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import url('https://v1.fontapi.ir/css/SFProDisplay:300?d=swap');
+
+// 1. Configuration and helpers
+@import 'abstracts/mixins';
+
+ //2. Vendors
+@import 'vendors/bootstrap/bootstrap';
+
+// 3. Base stuff
+@import 'base/base', 'base/typography', 'base/helpers';
+
+// 4. Layout-related sections
+@import "layout/header",'layout/main','layout/footer';
+
+// 5. Components
+@import "components/exploreMore",'components/backToTop';
+
+
+// 7. Themes
+@import 'themes/default';

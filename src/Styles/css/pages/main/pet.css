@@ -1,0 +1,58 @@
+.pet {
+  padding-top: 158px;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 1200px) {
+  .pet {
+    padding-top: 72px;
+  }
+}
+.pet .explore-more:after {
+  background: #6F1AB6;
+}
+.pet .watermark {
+  min-height: 222px;
+  position: relative;
+}
+.pet .watermark img {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: -1;
+}
+@media (max-width: 767.98px) {
+  .pet .watermark {
+    min-height: 110px;
+  }
+}
+.pet .content {
+  padding-top: 94px;
+  padding-left: 96px;
+  font-size: 16px;
+  letter-spacing: 0.2rem;
+}
+@media (max-width: 1200px) {
+  .pet .content {
+    padding: 0 21px;
+    padding-bottom: 32px;
+  }
+}
+.pet .content h1 {
+  color: #374151;
+}
+.pet .content p {
+  color: #6d7280;
+  padding: 32px 0;
+  max-width: 500px;
+}
+@media (max-width: 1200px) {
+  .pet .content p {
+    padding: 11px 0 24px 0;
+  }
+}
+
+/*# sourceMappingURL=pet.css.map */

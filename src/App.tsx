@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from "Layout/header";
+import Footer from "Layout/footer";
+import HeaderInfo from "Domain/main/headerInfo";
+import LastProducts from "Domain/main/lastProducts";
+import Brand from "Domain/main/brand";
+import Products from "Domain/main/products";
+import Pet from "Domain/main/pet";
+import Blogs from "Domain/main/blogs";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header className='position-relative vector'>
+                    <div className="container position-relative z-1">
+                        <Header/>
+                        <HeaderInfo/>
+                    </div>
+                    <LastProducts/>
+                <div className="extra-margin"/>
+            </header>
+            <main>
+                <Brand/>
+                <Products/>
+                <Pet/>
+                <Blogs/>
+            </main>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;

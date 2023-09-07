@@ -1,0 +1,41 @@
+$direction-base: ltr;
+
+
+$zindex-sidebar: 1090;
+$zindex-header: 1080;
+$zindex-alert: 1095;
+
+//backdrop
+$backdrop-background-color: black;
+$backdrop-transition: .3s ease;
+$backdrop-opacity--open: 0.5;
+
+//sidebar
+$sidebar-width: 300px;
+$sidebar-z-index: $zindex-sidebar;
+$sidebar-background: white;
+$sidebar-transition: $backdrop-transition;
+$sidebar-box-background: white;
+$sidebar-list-color: black;
+$sidebar-list--after-background: black;
+$sidebar-list--active: green;
+$sidebar-icon-color: white;
+
+//modal
+$modal-background: white;
+$modal-overlay-background: #0000009e;
+
+
+//header
+$header-height: 70px;
+$header-bg-color: white;
+$header-list-color: blue-ribbon;
+$header-list--after-background: $blue-ribbon;
+$header-list--active: $header-list--after-background;
+
+
+//colors
+$--800:#1F2937;
+$--500:#6D7280;
+$main:#6F1AB6;
+
